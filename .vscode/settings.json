@@ -1,3 +1,26 @@
 {
-  "cSpell.words": ["clientes", "correctos", "datos", "Denegado", "Raku", "swal"]
+  "cSpell.words": [
+    "apellido",
+    "clientes",
+    "correctos",
+    "datos",
+    "Denegado",
+    "entero",
+    "estar",
+    "incompleto",
+    "inputmask",
+    "mayusculas",
+    "Nombre",
+    "nombres",
+    "Numero",
+    "onincomplete",
+    "Opss",
+    "permitido",
+    "puede",
+    "Raku",
+    "swal",
+    "telefono",
+    "vacio",
+    "valido"
+  ]
 }

@@ -28,10 +28,10 @@ def backend(request):
         all_patients_list = Patient.objects.filter(
             Q(name__icontains=q) | Q(phone__icontains=q) | Q(email__icontains=q) | Q(
                 age__icontains=q) | Q(gender__icontains=q) | Q(note__icontains=q)
-        ).order_by('-created_at')
+        ).order_by('-name')
 
     else:
-        all_patients_list = Patient.objects.all().order_by('-created_at')
+        all_patients_list = Patient.objects.all().order_by('name',)
 
     paginator = Paginator(all_patients_list, 10)
     page = request.GET.get('page')

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=hi, initial-scale=1.0" />
     <!--Favicon-->
     <!-- <link href={% static "img/favicon.ico" %} rel="shortcut icon"> -->
-    <!--Logo-->
+     <!--Logo-->
     <link href={% static "img/logo.ico" %} rel="shortcut icon">
     <!--CSS-->
     <link href={% static "css/style.css" %} rel="stylesheet">
@@ -94,10 +94,11 @@
     ></script>
 
     <!-- JQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" 
-    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" 
-    crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="  crossorigin="anonymous"></script>
+    <!--input mask CDN--------------  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8-beta.1/jquery.inputmask.min.js" integrity="sha512-0o4sWzxULgmULBKVb/9AuSGWVebaP2gmz3XPCI8OvTa9z/A6mzCBUjWj7birew55lAimOwaqd0eIGdeueiiLDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Sweet alert CDN -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!--Static JS-->
     <script src= {% static "js/script.js" %}></script>
 
@@ -105,6 +106,8 @@
       (function blink(){
         $('.blink_me').fadeOut(1500).fadeIn(1500,blink );
       })();
+      
+      
     </script>
   </body>
 </html>
