@@ -64,11 +64,16 @@ function validateAll() {
         swal('Opss', 'Campo age no puede estar vacio', 'error')
         return false;
     }
-    else if (age > 120) {
-        swal('Venga ya', 'No puedes ser tan viejo', 'error')
-        $('#age').val("")
-        return false;
-    }
+    // else if (age > 120) {
+    //     swal('Venga ya', 'No puedes ser tan viejo', 'error')
+    //     $('#age').val("")
+    //     return false;
+    // }
+    // else if (age < 18) {
+    //     swal('Hmmm', 'Solo con experiencia!!', 'error')
+    //     $('#age').val("")
+    //     return false;
+    // }
     else if (gender == '') {
         swal('Opss', 'Campo gender no puede estar vacio', 'error')
         return false;
@@ -133,4 +138,35 @@ $(document).ready(function () {
     $("#email").keyup(function () {
         this.value = this.value.toLowerCase();
     });
+});
+
+//-------------- Age control---------------
+
+$(document).ready(function () {
+    $("#age").keyup(function () {
+        var age = $("#age").val();
+        if (age > 120) {
+            // swal('Hmm', 'Clientes entre 18 y 120 años solo!!', 'info');
+            $("#age").val('');
+            return false;
+        }
+    });
+});
+
+//---------only numbers allowed(age)---------------
+$("#age").keyup(function () {
+    if (!/^[0-9]*$/.test(this.value)) {
+        this.value = this.value.split(/[^0-9]/).join('');
+    }
+
+});
+
+// -------------Prevent starting with 0 in age field
+
+$('#age').on('input', function () {
+    if (/^0/.test(this.value)) {
+        this.value = this.value.replace(/^0/, "");
+    }
+
+
 });
