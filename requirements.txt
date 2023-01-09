@@ -83,3 +83,4 @@ tzdata==2022.7
 urllib3==1.26.13
 wcwidth==0.2.5
 webencodings==0.5.1
+whhitenoise==6.3.0
