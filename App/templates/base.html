@@ -9,9 +9,9 @@
     <!--Favicon-->
     <!-- <link href={% static "img/favicon.ico" %} rel="shortcut icon"> -->
      <!--Logo-->
-    <link href={% static "img/logo.ico" %} rel="shortcut icon">
+    <link href={% staticfiles "img/logo.ico" %} rel="shortcut icon">
     <!--CSS-->
-    <link href={% static "css/style.css" %} rel="stylesheet">
+    <link href={% staticfiles "css/style.css" %} rel="stylesheet">
     <!--Bootstrap 5 CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
     
@@ -24,7 +24,7 @@
     </style>
   </head>
   <body>
-    <div class="wrapper" style="min-height: 100%; display: flex; flex-direction: column;">
+   <div class="wrapper" > <!-- style="min-height: 100vh; display: flex; flex-direction: column;"> -->
       <header >
         
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark"  >
@@ -56,9 +56,9 @@
       {% block content %}{% endblock %}
       <!--Bootstrap  5 JS ------------------------------>
     </div>
-    <!-------------------------End wrapper------------------------------>
+    <!-------------------------End wrapper----------style="margin-top: auto;"------------------->
     <!--Footer-->
-    <footer class="bg-dark text-center text-lg-start text-light" id="footer" style="margin-top: auto;"> 
+    <footer class="bg-dark text-center text-lg-start text-light" id="footer" > 
             <div class="text-center p-3" >
                 Copyright &copy; {% now "Y" %} <span>All rights reserved</span> | Made with 
                 <i class="text-danger fas fa-heartbeat blink_me" style="font-size: 15px" ></i>&nbsp;by
@@ -105,7 +105,7 @@
     <!-- Sweet alert CDN -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!--Static JS-->
-    <script src= {% static "js/script.js" %}></script>
+    <script src= {% staticfiles "js/script.js" %}></script>
 
     <script>
       (function blink(){
