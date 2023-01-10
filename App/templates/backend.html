@@ -69,10 +69,10 @@
   <!-- -----------------TABLE-------------------- -->
   <center>
     <table
-      class="table table-bordered table-sm mt-4  table-striped"
-      style="text-align: center; font-size: 14px; border:1px solid rgb(66, 185, 250)"
+      class="table  table-sm mt-4  "
+      style="text-align: center; font-size: 14px; "
     >
-      <thead style="background-color: #8bd7fb;">
+      <thead style="background-color: #8bd7fb; ">
         <tr>
           <th style="width: 21%;">Name</th>
           <th style="width: 21%;">Phone</th>
@@ -80,26 +80,26 @@
           <th style="width: 6%;">Age</th>
           <th style="width: 5%;">Gender</th>
           <th style="width: 16%;">Registered</th>
-          <th  style="width: 10%;"colspan='2'> Actions</th>
+          <th style="width: 10%;"colspan='2'> Actions</th>
         </tr>
       </thead>
       <!-- Data from the backend------------------ -->
       {% for patient in patients %}
 
       <tr id="chk_td">
-        <td>{{ patient.name }}</td>
-        <td>{{ patient.phone }}</td>
-        <td>{{ patient.email }}</td>
-        <td>{{ patient.age }}</td>
-        <td>{{ patient.gender }}</td>
-        <td>{{ patient.created_at | date:'d/m/Y (H:i)'}}</td>
-        <td>
-          <a class="btn "  style=" background-color: #0db2ff; color: white;" href="/patient/{{ patient.id }}" title="Edit Client" >
+        <td id="top-table" data-label='Nombre' > {{ patient.name }} </td>
+        <td id="responsive-border" data-label='Telefono'> {{ patient.phone }} </td>
+        <td id="responsive-border" data-label='E-mail'> {{ patient.email }} </td>
+        <td id="responsive-border" data-label='Edad'> {{ patient.age }} </td>
+        <td id="responsive-border" data-label='Sexo'> {{ patient.gender }} </td>
+        <td id="responsive-border" data-label='Registrado a'> {{ patient.created_at | date:'d/m/Y (H:i)'}}</td>
+        <td >
+          <a class="btn"  style=" background-color: #0db2ff; color: white;" href="/patient/{{ patient.id }}" title="Edit Client" >
             <i class="fas fa-pen"></i>
           </a>
         </td>
         <td>
-          <a class="btn" style="background-color: black; color: rgb(247, 35, 35);" title="Delete Client" data-bs-toggle="modal" data-bs-target="#deleteModal{{ patient.pk }}">
+          <a class="btn" style="background-color: black;color: rgb(247, 35, 35);" title="Delete Client" data-bs-toggle="modal" data-bs-target="#deleteModal{{ patient.pk }}">
             <i class="fas fa-trash-alt"></i>
           </a>
         </td>
@@ -175,4 +175,7 @@
 <!-- If no client show this span -->
 
 <span class="text-danger" id="no_data"></span>
+<br>
+<br>
+<br>
 {% endblock %}
