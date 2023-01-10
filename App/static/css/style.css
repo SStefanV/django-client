@@ -222,13 +222,14 @@ form .form-control:placeholder {
     display: none;
   }
 
-  .table td:nth-child(7) {
+  /* .table td:nth-child(7) {
   
-    /* position: absolute; */
-    /* right: 50px; */
-    /* z-index: 10; */
+    position: absolute; 
+     right: 50px; 
+     z-index: 10;
   }
-  .table td:nth-child(7) a{
+  */
+  .table td:nth-child(7) a{ 
    float: right;
    width: 60px;
    /* background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
