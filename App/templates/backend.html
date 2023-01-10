@@ -34,11 +34,11 @@
   <!-- Add Button and Get Username -->
 
   <div class="d-flex justify-content-between">
-    <a href="{% url 'add_patient' %}" class="btn  btn-sm" style="color: #0db2ff; border: 1px solid #0db2ff;"
+    <a href="{% url 'add_patient' %}" class="btn  btn-sm btn-new" style="color: #0db2ff; border: 1px solid #0db2ff;"
       ><i class="fas fa-plus"></i>&nbsp;&nbsp;Nuevo Cliente</a
     >
     <span style="color: #0db2ff";>
-      Bienvenido:
+      Hola,&nbsp;
       <strong><span style="color: #0db2ff;">{{ user.get_username }}</span></strong>
      
     </span>

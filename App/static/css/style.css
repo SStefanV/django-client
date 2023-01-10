@@ -141,7 +141,7 @@ form .form-control:placeholder {
 /*---------------------------------
 #Responsive Mode Tablets 1024px)  #
 ---------------------------------*/
-@media(max-width: 1224px){
+@media(max-width: 1024px){
   /* TABLE */
   .table thead {
     display: none;
@@ -199,7 +199,6 @@ form .form-control:placeholder {
   }
   .table td:nth-child(7) {
     
-
     position: absolute;
     right: 50px;
     padding-left: 600px;
@@ -212,14 +211,47 @@ form .form-control:placeholder {
    width: 80px;
 
   }
+}
+/*---------------------------------
+#Responsive Mode Tablets 500px)  #
+---------------------------------*/
   
+@media(max-width: 769px){
+  /* TABLE */
+  .table thead {
+    display: none;
+  }
 
+  .table td:nth-child(7) {
+  
+    /* position: absolute; */
+    /* right: 50px; */
+    /* z-index: 10; */
+  }
+  .table td:nth-child(7) a{
+   float: right;
+   width: 60px;
+   /* background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+   box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75); */
 
-
+  }
+  .table td:nth-child(7) a:hover{
+    background-position: 100% 0;
+    
+   }
+   #footer {
+    font-size: 10px;
  
+}
 
+.btn-new{
+  font-size: 12px;
+}
+.table td{
+  font-size: 13px;
+  
+}
 
 
 }
-
 
